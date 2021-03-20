@@ -16,7 +16,7 @@ export interface IWorkstation {
   currentProduct: ICurrentProduct | null;
 }
 
-interface ICurrentProduct {
+export interface ICurrentProduct {
   id: string;
   entryTime: number;
 }

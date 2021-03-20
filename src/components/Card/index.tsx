@@ -1,34 +1,26 @@
-import React, { FC, useContext } from "react";
-import { Container, Content } from "./index.styles";
+import React, { FC } from "react";
+import { Container } from "./index.styles";
 import { IWorkstation } from "../../typescript/interfaces/data";
-import { DataContext } from "../../context";
 import Header from "./Header";
-import Image from "./Image";
-import DataField from "./DataField";
+import Body from "./Body";
 
 interface CardProps {
   workstation: IWorkstation;
 }
 
 const Card: FC<CardProps> = ({ workstation }) => {
-  const { name, cycleTimeHrs, currentProduct } = workstation;
-
-  const [dataContext, setDataContext] = useContext(DataContext);
+  const { cycleTimeHrs, currentProduct } = workstation;
+  // const currentEngine: IEngine =
+  //   dataContext.engines[workstation.currentProduct?.id];
 
   return (
     <Container>
-      <Header title={name} />
-      <Content>
-        {!currentProduct ? (
-          <span>No Product</span>
-        ) : (
-          <>
-            <Image image="image" />
-            <DataField field="Cycle Time" value={Math.round(cycleTimeHrs)} />
-            <DataField field="Entry Time" value={currentProduct.entryTime} />
-          </>
-        )}
-      </Content>
+      <Header title={workstation.name} />
+      {currentProduct === null ? (
+        <span>No Product</span>
+      ) : (
+        <Body cycleTime={cycleTimeHrs} product={currentProduct} />
+      )}
     </Container>
   );
 };

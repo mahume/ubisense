@@ -1,11 +1,19 @@
 import React, { FC } from "react";
 
 interface ImageProps {
-  image: string;
+  imageURL: string | undefined;
 }
 
-const Image: FC<ImageProps> = ({ image }) => {
-  return <div>{image}</div>;
+const Image: FC<ImageProps> = ({ imageURL }) => {
+  return (
+    <div>
+      {imageURL ? (
+        <img src={imageURL} alt="" style={{ width: 200 }} />
+      ) : (
+        <span>No Image</span>
+      )}
+    </div>
+  );
 };
 
 export default Image;
