@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+import { StyledHeader, StyledH1 } from "./styles";
 
 interface HeaderProps {
   title: string;
@@ -6,9 +7,9 @@ interface HeaderProps {
 
 const Header: FC<HeaderProps> = ({ title }) => {
   return (
-    <nav>
-      <h1>{title}</h1>
-    </nav>
+    <StyledHeader>
+      <StyledH1>{title}</StyledH1>
+    </StyledHeader>
   );
 };
 
