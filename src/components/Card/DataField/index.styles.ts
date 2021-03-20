@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledField = styled.h3`
-  color: ${(props) => props.theme.palette.common.gray};
+  color: ${(props) => props.theme.palette.common.darkGray};
 `;
 
 export const StyledValue = styled.p`

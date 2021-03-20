@@ -12,7 +12,8 @@ declare module "styled-components" {
       common: {
         black: string;
         white: string;
-        gray: string;
+        lightGray: string;
+        darkGray: string;
       };
       primary: IPalette;
     };

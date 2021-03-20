@@ -5,7 +5,8 @@ const theme: DefaultTheme = {
     common: {
       black: "hsl(221, 40%, 11%)",
       white: "hsl(99, 100%, 100%)",
-      gray: "hsl(220, 9%, 46%)",
+      lightGray: "hsl(105, 0%, 90%)",
+      darkGray: "hsl(220, 9%, 46%)",
     },
     primary: {
       main: "hsl(225, 64%, 33%)",

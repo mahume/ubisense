@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 800px;
-  height: 400px;
   background-color: ${(props) => props.theme.palette.common.white};
   border-radius: ${(props) => props.theme.borderRadius.main};
   box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),

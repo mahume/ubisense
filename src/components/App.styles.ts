@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledLayout = styled.div`
+export const Layout = styled.div`
   width: 100vw;
   height: 100vh;
 
@@ -8,8 +8,12 @@ export const StyledLayout = styled.div`
   flex-direction: column;
 `;
 
-export const StyledMain = styled.main`
-  background-color: hsl(105, 0%, 90%);
+export const Main = styled.main`
+  background-color: ${(props) => props.theme.palette.common.lightGray};
+  padding: 2rem;
 
   flex-grow: 1;
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
 `;
