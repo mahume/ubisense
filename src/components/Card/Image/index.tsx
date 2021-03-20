@@ -5,7 +5,7 @@ interface ImageProps {
 }
 
 const Image: FC<ImageProps> = ({ image }) => {
-  return <div></div>;
+  return <div>{image}</div>;
 };
 
 export default Image;

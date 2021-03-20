@@ -1,14 +1,20 @@
 import React, { FC } from "react";
-import { StyledContainer } from "./index.styles";
+import { Container, Content } from "./index.styles";
 import Header from "./Header";
+import Image from "./Image";
+import DataField from "./DataField";
 
 interface CardProps {}
 
 const Card: FC<CardProps> = (props: CardProps) => {
   return (
-    <StyledContainer>
+    <Container>
       <Header title="Test" />
-    </StyledContainer>
+      <Content>
+        <Image image="image" />
+        <DataField field="field" value="value" />
+      </Content>
+    </Container>
   );
 };
 
