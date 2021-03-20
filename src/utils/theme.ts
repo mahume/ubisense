@@ -13,6 +13,9 @@ const theme: DefaultTheme = {
       contrastText: "hsl(99, 100%, 100%)",
     },
   },
+  borderRadius: {
+    main: "1rem",
+  },
 };
 
 export default theme;

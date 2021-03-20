@@ -16,5 +16,8 @@ declare module "styled-components" {
       };
       primary: IPalette;
     };
+    borderRadius: {
+      main: string;
+    };
   }
 }
