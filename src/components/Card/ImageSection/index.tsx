@@ -1,19 +1,20 @@
 import React, { FC } from "react";
+import { Container } from "./index.styles";
 
-interface ImageProps {
+interface ImageSectionProps {
   imageURL: string | undefined;
 }
 
-const Image: FC<ImageProps> = ({ imageURL }) => {
+const ImageSection: FC<ImageSectionProps> = ({ imageURL }) => {
   return (
-    <div>
+    <Container>
       {imageURL ? (
         <img src={imageURL} alt="" style={{ width: 200 }} />
       ) : (
         <span>No Image</span>
       )}
-    </div>
+    </Container>
   );
 };
 
-export default Image;
+export default ImageSection;

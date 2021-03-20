@@ -6,6 +6,11 @@ export const StyledHeader = styled.header`
   border-top-left-radius: inherit;
   border-top-right-radius: inherit;
 
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
   display: flex;
   justify-content: center;
   align-items: center;
