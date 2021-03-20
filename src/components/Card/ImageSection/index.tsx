@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { Container } from "./index.styles";
+import { Container, Image } from "./index.styles";
 
 interface ImageSectionProps {
   imageURL: string | undefined;
@@ -8,11 +8,7 @@ interface ImageSectionProps {
 const ImageSection: FC<ImageSectionProps> = ({ imageURL }) => {
   return (
     <Container>
-      {imageURL ? (
-        <img src={imageURL} alt="" style={{ width: 200 }} />
-      ) : (
-        <span>No Image</span>
-      )}
+      {imageURL ? <Image src={imageURL} alt="engine" /> : <span>No Image</span>}
     </Container>
   );
 };

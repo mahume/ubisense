@@ -10,8 +10,6 @@ interface CardProps {
 
 const Card: FC<CardProps> = ({ workstation }) => {
   const { cycleTimeHrs, currentProduct } = workstation;
-  // const currentEngine: IEngine =
-  //   dataContext.engines[workstation.currentProduct?.id];
 
   return (
     <Container>

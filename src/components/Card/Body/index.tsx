@@ -20,7 +20,11 @@ const Body: FC<BodyProps> = ({ cycleTime, product }) => {
   return (
     <Content>
       <ImageSection imageURL={currentEngine?.image} />
-      <DataSection product={product} cycleTime={cycleTime} />
+      <DataSection
+        product={product}
+        cycleTime={cycleTime}
+        engine={currentEngine}
+      />
     </Content>
   );
 };
