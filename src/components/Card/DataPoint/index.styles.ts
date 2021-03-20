@@ -1,9 +1,13 @@
 import styled from "styled-components";
 
-export const StyledField = styled.h3`
+export const DataField = styled.div``;
+
+export const DataLabel = styled.h3`
   color: ${(props) => props.theme.palette.common.darkGray};
 `;
 
-export const StyledValue = styled.p`
+export const DataValue = styled.p`
   color: ${(props) => props.theme.palette.common.black};
+  font-size: 2rem;
+  font-weight: 600;
 `;
