@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { StyledHeader } from "./Header.styles";
+import { StyledHeader } from "./index.styles";
 
 interface HeaderProps {
   title: string;
