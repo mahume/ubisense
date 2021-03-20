@@ -3,7 +3,7 @@ import { StyledField, StyledValue } from "./index.styles";
 
 interface DataFieldProps {
   field: string;
-  value: string;
+  value: string | number;
 }
 
 const DataField: FC<DataFieldProps> = ({ field, value }) => {

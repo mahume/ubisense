@@ -1,3 +1,8 @@
+export interface IData {
+  engines: IEngine[];
+  workstations: IWorkstation[];
+}
+
 export interface IEngine {
   id: string;
   serialNumber: string;

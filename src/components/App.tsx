@@ -1,29 +1,19 @@
-import React, { useEffect, useState } from "react";
-import AppHeader from "./AppHeader";
+import React, { useContext } from "react";
 import { StyledLayout, StyledMain } from "./App.styles";
+import { DataContext } from "../context";
+import AppHeader from "./AppHeader";
 import Card from "./Card";
-// import { fetchProduct } from "../utils/api";
-import { enginesTestData, workstationsTestData } from "../utils/testData";
-import { IEngine, IWorkstation } from "../typescript/interfaces/data";
 
 function App() {
-  const [engines, setEngines] = useState<IEngine[]>([]);
-  const [workstations, setWorkstations] = useState<IWorkstation[]>([]);
-
-  useEffect(() => {
-    // TODO: Fetch from API
-
-    setEngines(enginesTestData);
-    setWorkstations(workstationsTestData);
-  }, []);
+  const [dataContext, setDataContext] = useContext(DataContext);
 
   return (
     <StyledLayout>
       <AppHeader />
       <StyledMain>
-        {workstations.map((station) => {
-          return <Card />;
-        })}
+        {dataContext.workstations.map((workstation) => (
+          <Card key={workstation.name} workstation={workstation} />
+        ))}
       </StyledMain>
     </StyledLayout>
   );
