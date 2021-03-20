@@ -1,12 +1,13 @@
 import React from "react";
 import Header from "./Header";
+import { StyledLayout, StyledMain } from "./App.styles";
 
 function App() {
   return (
-    <div className="App">
+    <StyledLayout>
       <Header title="Work Stations" />
-      <main>Test</main>
-    </div>
+      <StyledMain>Test</StyledMain>
+    </StyledLayout>
   );
 }
 
