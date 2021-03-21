@@ -1,3 +1,1 @@
-import * as DATA from "./data";
-
-export { DATA };
+export * as DATA from "./data";

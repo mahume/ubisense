@@ -1,3 +1,1 @@
-import * as interfaces from "./interfaces";
-
-export { interfaces };
+export * as interfaces from "./interfaces";
