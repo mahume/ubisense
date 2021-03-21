@@ -1,6 +1,6 @@
-import { DefaultTheme } from "styled-components";
+import { IDefaultTheme } from "../typescript/interfaces/styles";
 
-const theme: DefaultTheme = {
+const theme: IDefaultTheme = {
   palette: {
     common: {
       black: "hsl(221, 40%, 11%)",
@@ -11,6 +11,8 @@ const theme: DefaultTheme = {
     primary: {
       main: "hsl(225, 64%, 33%)",
       success: "hsl(161, 94%, 30%)",
+      warning: "hsl(53, 95%, 50%)",
+      error: "hsl(341, 93%, 30%)",
       contrastText: "hsl(99, 100%, 100%)",
     },
   },
