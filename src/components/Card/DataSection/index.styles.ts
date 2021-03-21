@@ -6,6 +6,7 @@ export const GridContainer = styled.div`
   padding: 2rem;
 
   display: grid;
+  grid-gap: 1rem;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(3, 1fr);
 

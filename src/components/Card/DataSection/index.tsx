@@ -16,8 +16,8 @@ const DataSection: FC<DataSectionProps> = ({ product, cycleTime, engine }) => {
     <GridContainer>
       <DataPoint field="Serial Number" value={engine?.serialNumber || "N/A"} />
       <DataPoint field="Model" value={engine?.model || "N/A"} />
-      <DataPoint field="Cycle Time" value={Math.round(cycleTime)} />
       <DataPoint field="Entry Time" value={format(product.entryTime, "p")} />
+      <DataPoint field="Cycle Time" value={Math.round(cycleTime)} />
       <GridItem span={2}>
         <DataPoint field="Time Elapsed" value={<ProgressBar value={60} />} />
       </GridItem>
