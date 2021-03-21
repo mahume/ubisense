@@ -1,12 +1,17 @@
 import React, { FC } from "react";
-import { Progress } from "./index.styles";
+import { ProgressContainer } from "./index.styles";
 
 interface ProgressBarProps {
   value: number;
 }
 
 const ProgressBar: FC<ProgressBarProps> = ({ value }) => {
-  return <Progress max={100} value={value}></Progress>;
+  const maxValue = 100;
+  return (
+    <ProgressContainer max={maxValue} value={value}>
+      <progress max={maxValue} value={value}></progress>
+    </ProgressContainer>
+  );
 };
 
 export default ProgressBar;
