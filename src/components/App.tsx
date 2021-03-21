@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { AppLayout, AppGrid } from "./App.styles";
+import { AppLayout, AppGrid, GlobalStyles } from "./App.styles";
 import { DataContext } from "../context";
 import AppHeader from "./AppHeader";
 import Card from "./Card";
@@ -9,6 +9,7 @@ function App() {
 
   return (
     <AppLayout>
+      <GlobalStyles />
       <AppHeader />
       <AppGrid>
         {dataContext.workstations.map((workstation) => (
