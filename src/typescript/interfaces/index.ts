@@ -1,4 +1,2 @@
-import * as data from "./data";
-import * as styles from "./styles";
-
-export { data, styles };
+export * as data from "./data";
+export * as styles from "./styles";

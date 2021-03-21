@@ -1,5 +1,5 @@
 import React, { createContext, useEffect, useState, ReactNode } from "react";
-import { IData } from "../typescript/interfaces/data";
+import { IData } from "@typescript/interfaces/data";
 import { INITIAL_DATA } from "../constants/data";
 import { enginesTestData, workstationsTestData } from "../utils/testData";
 

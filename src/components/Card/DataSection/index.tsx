@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { format } from "date-fns";
-import { ICurrentProduct, IEngine } from "../../../typescript/interfaces/data";
+import { ICurrentProduct, IEngine } from "@typescript/interfaces/data";
 import { GridContainer, GridItem } from "./index.styles";
 import DataPoint from "../DataPoint";
 import ProgressBar from "../../ProgressBar";

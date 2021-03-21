@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { Container, EmptyBody } from "./index.styles";
-import { IWorkstation } from "../../typescript/interfaces/data";
+import { IWorkstation } from "@typescript/interfaces/data";
 import Header from "./Header";
 import Body from "./Body";
 

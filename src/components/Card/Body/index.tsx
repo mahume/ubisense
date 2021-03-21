@@ -1,7 +1,7 @@
 import React, { FC, useContext } from "react";
 import { Content } from "./index.styles";
 import { DataContext } from "../../../context";
-import { ICurrentProduct } from "../../../typescript/interfaces/data";
+import { ICurrentProduct } from "@typescript/interfaces/data";
 import ImageSection from "../ImageSection";
 import DataSection from "../DataSection";
 
