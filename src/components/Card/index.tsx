@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { Container } from "./index.styles";
+import { Container, EmptyBody } from "./index.styles";
 import { IWorkstation } from "../../typescript/interfaces/data";
 import Header from "./Header";
 import Body from "./Body";
@@ -15,7 +15,7 @@ const Card: FC<CardProps> = ({ workstation }) => {
     <Container>
       <Header title={workstation.name} />
       {currentProduct === null ? (
-        <span>No Product</span>
+        <EmptyBody>No Product</EmptyBody>
       ) : (
         <Body cycleTime={cycleTimeHrs} product={currentProduct} />
       )}

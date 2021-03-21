@@ -12,7 +12,7 @@ const theme: IDefaultTheme = {
       main: "hsl(225, 64%, 33%)",
       success: "hsl(161, 94%, 30%)",
       warning: "hsl(53, 95%, 50%)",
-      error: "hsl(341, 93%, 30%)",
+      error: "hsl(0, 100%, 63%)",
       contrastText: "hsl(99, 100%, 100%)",
     },
   },

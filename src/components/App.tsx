@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Layout, Main } from "./App.styles";
+import { AppLayout, AppGrid } from "./App.styles";
 import { DataContext } from "../context";
 import AppHeader from "./AppHeader";
 import Card from "./Card";
@@ -8,14 +8,14 @@ function App() {
   const [dataContext, setDataContext] = useContext(DataContext);
 
   return (
-    <Layout>
+    <AppLayout>
       <AppHeader />
-      <Main>
+      <AppGrid>
         {dataContext.workstations.map((workstation) => (
           <Card key={workstation.name} workstation={workstation} />
         ))}
-      </Main>
-    </Layout>
+      </AppGrid>
+    </AppLayout>
   );
 }
 

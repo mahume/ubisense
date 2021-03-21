@@ -1,11 +1,15 @@
 import styled from "styled-components";
 
 export const GridContainer = styled.div`
-  width: 400px;
+  width: 100%;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(3, 1fr);
+
+  @media screen and (min-width: 768px) {
+    width: 50%;
+  }
 `;
 
 export const GridItem = styled.div<{ span: number }>`

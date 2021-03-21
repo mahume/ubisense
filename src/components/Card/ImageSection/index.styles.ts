@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  width: 50%;
+  padding: 1rem;
+
   flex-grow: 1;
   display: flex;
   justify-content: center;
@@ -8,6 +11,6 @@ export const Container = styled.div`
 `;
 
 export const Image = styled.img`
-  width: 300px;
+  width: 100%;
   height: auto;
 `;

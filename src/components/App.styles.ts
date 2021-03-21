@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Layout = styled.div`
+export const AppLayout = styled.div`
   width: 100vw;
   height: 100vh;
 
@@ -8,12 +8,17 @@ export const Layout = styled.div`
   flex-direction: column;
 `;
 
-export const Main = styled.main`
+export const AppGrid = styled.main`
   background-color: ${(props) => props.theme.palette.common.lightGray};
   padding: 2rem;
 
   flex-grow: 1;
   display: grid;
   grid-gap: 3rem;
-  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  grid-template-columns: 1fr;
+  justify-items: center;
+
+  @media screen and (min-width: 992px) {
+    grid-template-columns: repeat(auto-fit, minmax(750px, 1fr));
+  }
 `;
