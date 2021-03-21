@@ -15,6 +15,12 @@ export const GlobalStyles = createGlobalStyle`
     font-size: 1.5rem;
     line-height:2;
   }
+  h3 {
+    margin: 0;
+  }
+  p {
+    margin: 0;
+  }
 `;
 
 export const AppLayout = styled.div`

@@ -12,7 +12,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     width: 750px;
   }
 `;
@@ -21,7 +21,7 @@ export const EmptyBody = styled.div`
   color: ${(props) => props.theme.palette.common.black};
   font-size: 2rem;
   font-weight: 600;
-  min-height: 425px;
+  min-height: 200px;
 
   display: flex;
   justify-content: center;

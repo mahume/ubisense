@@ -7,7 +7,7 @@ export const Content = styled.div`
   align-content: center;
   flex-direction: column;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     flex-direction: row;
   }
 `;
