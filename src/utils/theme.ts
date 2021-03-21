@@ -17,7 +17,7 @@ const theme: IDefaultTheme = {
     },
   },
   borderRadius: {
-    main: "1rem",
+    main: "18px",
   },
 };
 

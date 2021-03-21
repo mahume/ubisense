@@ -9,6 +9,4 @@ export const DataLabel = styled.h3`
 
 export const DataValue = styled.p`
   color: ${(props) => props.theme.palette.common.black};
-  font-size: 2rem;
-  font-weight: 600;
 `;

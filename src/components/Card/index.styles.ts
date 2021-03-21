@@ -13,13 +13,13 @@ export const Container = styled.div`
   flex-direction: column;
 
   @media screen and (min-width: 769px) {
-    width: 750px;
+    width: 685px;
+    height: 334px;
   }
 `;
 
 export const EmptyBody = styled.div`
   color: ${(props) => props.theme.palette.common.black};
-  font-size: 2rem;
   font-weight: 600;
   min-height: 200px;
 

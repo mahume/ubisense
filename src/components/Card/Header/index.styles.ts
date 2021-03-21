@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const StyledHeader = styled.header`
+  height: 61px;
   color: ${(props) => props.theme.palette.primary.contrastText};
   background-color: ${(props) => props.theme.palette.common.black};
   border-top-left-radius: inherit;

@@ -1,10 +1,11 @@
 import styled, { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
   html {
     --maxWidth: 1000px;
     box-sizing: border-box;
-    font-size: 10px;
   }
   *, *:before, *:after {
     box-sizing: inherit;
@@ -12,14 +13,31 @@ export const GlobalStyles = createGlobalStyle`
   body {
     padding: 0;
     margin: 0;
-    font-size: 1.5rem;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
     line-height:2;
+  }
+  h1 {
+    line-height: 46.5px;
+    font-size: 36px;
+    font-weight: 600;
+  }
+  h2 {
+    line-height: 32px;
+    font-size: 24px;
+    font-weight: 600;
   }
   h3 {
     margin: 0;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 500;
   }
   p {
     margin: 0;
+    line-height: 32px;
+    font-size: 24px;
+    font-weight: 600px;
   }
 `;
 

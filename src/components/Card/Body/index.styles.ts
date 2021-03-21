@@ -9,5 +9,6 @@ export const Content = styled.div`
 
   @media screen and (min-width: 769px) {
     flex-direction: row;
+    flex-grow: 1;
   }
 `;
