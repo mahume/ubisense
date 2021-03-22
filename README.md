@@ -2,7 +2,7 @@
 
 ## About
 
-View on [GitHub Pages]()
+View on [Netlify](mahume-ubisense.netlify.app)
 
 ## Tech Used
 
