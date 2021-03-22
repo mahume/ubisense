@@ -16,8 +16,5 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["src"],
-  "rules": {
-    "@typescript-eslint/no-unused-vars": "off"
-  }
+  "include": ["src"]
 }

@@ -32,7 +32,7 @@ const DataProvider = ({ children }: { children: ReactNode }) => {
 
   useEffect(() => {
     handleFetch();
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <DataContext.Provider value={[state, setState]}>
